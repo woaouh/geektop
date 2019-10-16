@@ -297,5 +297,99 @@ section
 	> * 
 		display: inline-block
 
+.second-section
+	padding: $gutter/2 0
+
+.news-wrap
+	padding-bottom: $gutter/2
+	.pattern
+		&::before
+			display: none
+	.overlay
+		&::before
+			opacity: 0.4
+
+.item-news
+	min-height: 280px
+	margin: $gutter/2 0
+	color: $text-color
+	&-content
+		border: 
+			left: #dfdfdf 1px solid
+			bottom: #dfdfdf 1px solid
+		z-index: 1
+		position: absolute
+		bottom: 0
+		background-color: #ffffff
+		width: 80%
+		padding: $gutter
+		h3
+			font-size: 17px
+			line-height: 1.2
+			margin: 0
+	&:hover
+		h3
+			text-decoration: underline
+
+.date
+	font-size: 13px
+	color: $accent
+	font-family: baron-g, sans-serif
+	font-weight: bold
+
+.aside-box
+	margin-bottom: $gutter
+	text-align: center
+	.img-responsive
+		display: inline-block
+
+.dark-section
+	padding: 30px 0
+	background-color: $dark
+	h2 
+		a 
+			color: #ffffff
+
+.col-item
+	margin: 12px 0 15px
+	a 
+		text-decoration: none
+		transition: color .25s ease
+		&:hover, &.hover
+			text-decoration: underline
+	.item-comments
+		margin-top: 2px
+		.fa, .item-comments-count
+			color: #49505a
+		.fa
+			font-size: 12px
+			margin: 
+				left: 20px
+				right: 5px
+		.item-comments-count
+			&::after
+				left: -40px
+				color: #49505a
+				opacity: 1
+			&:hover
+				color: #49505a
+		.date
+			display: inline-block
+			margin-top: 0
+	h4
+		font-size: 15px
+		font-weight: normal
+		margin: 0
+		line-height: 1.35
+	.col-item-meta
+		margin: 
+			bottom: 8px
+			top: 6px
+	&.col-item-dark
+		a 
+			color: #a4a7ab
+			&:hover, &.hover
+				color: #ffffff
+
 
 @import "media" // Always at the end
