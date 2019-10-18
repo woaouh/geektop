@@ -30,6 +30,11 @@
 				padding-bottom: 0
 				margin-bottom: 0
 
+	.ispage
+		.top-menu
+			top: 65px
+			position: relative
+
 // ≥768px
 +media-breakpoint-down(sm)
 
@@ -75,6 +80,14 @@
 
 	.cat-list-first
 		padding-top: $gutter/2
+
+	.page-header
+		&-meta
+			h1
+				font-size: 24px
+				margin: 10px 0 0
+		&.overlay::before
+			background-image: linear-gradient(rgba(#0000, .3), rgba(#000, .75))
 
 // ≥576px
 +media-breakpoint-down(xs)
